@@ -64,7 +64,9 @@ class OrientPrompt(Gtk.Application):
             return
         # TODO Less stupid version of this
         value = self.get_orientation()
-        self.last_set = value     
+        self.last_set = value
+        self.window.hide()
+        self.unset_timer()
         if value == "normal":
             wlr_randr("--output",
                     monitor,
