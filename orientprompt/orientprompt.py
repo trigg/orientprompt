@@ -15,6 +15,7 @@ class OrientPrompt(Gtk.Application):
     Application
     """
 
+
     def __init__(self):
         """
         Create a GTK app, prepare fields to use for later
